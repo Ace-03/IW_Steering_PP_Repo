@@ -28,6 +28,7 @@ public class PathFollow : Seek
                 }
             }
             target = targetPath[currentTarget];
+            //Debug.Log(target);
         }
 
         float distance = (target.transform.position - character.transform.position).magnitude;

@@ -13,8 +13,8 @@ public class Seeker : Kinematic
 
     //public GameObject target;
 
-    [SerializeField]
-    private Toggle toggle;
+    //[SerializeField]
+    //private Toggle toggle;
 
     // Start is called before the first frame update
     
@@ -30,7 +30,6 @@ public class Seeker : Kinematic
         mySeekRotateType.character = this;
         mySeekRotateType.target = myTarget;
 
-        
         myFleeRotateType = new LookWhereGoing();
         myFleeRotateType.character = this;
         myFleeRotateType.target = myTarget;
@@ -46,9 +45,11 @@ public class Seeker : Kinematic
         base.Update();
     }
 
+    /*
     public void ChangeBehaviour()
     {
         flee = !flee;
         myMoveType.flee = flee;
     }
+    */
 }

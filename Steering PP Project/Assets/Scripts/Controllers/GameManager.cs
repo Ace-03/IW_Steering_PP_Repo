@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject SeekerAI;
-    public GameObject target;
+    public GameObject ShipAI;
+
+    //public GameObject target;
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
+    
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject AICube = (GameObject)Instantiate(SeekerAI, transform.position, transform.rotation);
-            Seek SeekScript = AICube.GetComponent<Seek>();
-            SeekScript.target = target;
+            GameObject AICube = GameObject.Instantiate(ShipAI);
+            AICube.transform.position = transform.position;
         }
     }
+    
 }

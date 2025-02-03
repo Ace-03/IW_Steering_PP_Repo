@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 6076877964696887608}
   - component: {fileID: 6076877964696887615}
   - component: {fileID: 6076877964696887614}
-  - component: {fileID: 6076877964696887613}
+  - component: {fileID: 1976756730}
   m_Layer: 0
   m_Name: seeker01
   m_TagString: Untagged
@@ -188,7 +188,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6076877964696887613
+--- !u!114 &1976756730
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,16 +197,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6076877964696887612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 200b89be91d4cc643b81bc3677db7b7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e73491bfa1096e47ae529f28217d113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linearVelocity: {x: 5, y: 0, z: 5}
+  linearVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
-  maxSpeed: 5
-  maxAngularVelocity: 10000
+  maxSpeed: 10
+  maxAngularVelocity: 45
   myTarget: {fileID: 0}
-  flee: 1
-  toggle: {fileID: 0}
+  targets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &6076877964994462238
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,6 +5028,11 @@ PrefabInstance:
     - target: {fileID: 2705286137011316497, guid: b3c0a61dfe701344d819eb701e83f4b7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9144030251778499809, guid: b3c0a61dfe701344d819eb701e83f4b7,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
