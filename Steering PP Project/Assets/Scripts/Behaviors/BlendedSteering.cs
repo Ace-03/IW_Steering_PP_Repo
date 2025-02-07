@@ -32,8 +32,6 @@ public class BlendedSteering
         }
 
         // crop the result and return
-        //result.linear = Mathf.Max(result.linear, maxAcceleration);
-        //result.angular = Mathf.Max(result.angular, maxRotation);
         result.linear = result.linear.normalized * maxAcceleration;
         float angularAcceleration = Mathf.Abs(result.angular);
         if (angularAcceleration > maxRotation)

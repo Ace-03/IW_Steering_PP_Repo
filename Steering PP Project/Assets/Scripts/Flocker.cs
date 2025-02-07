@@ -71,19 +71,6 @@ public class Flocker : Kinematic
     // Update is called once per frame
     protected override void Update()
     {
-        // calculate our cohere target?
-        //Vector3 centerOfMass = Vector3.zero;
-        //Vector3 flockVelocity = Vector3.zero;
-        //foreach (Kinematic bird in kBirds)
-        //{
-        //    centerOfMass += bird.transform.position;
-        //    flockVelocity += bird.linearVelocity;
-        //}
-        //centerOfMass /= kBirds.Length;
-        //flockVelocity /= kBirds.Length;
-        //myCohereTarget.transform.position = centerOfMass;
-        //myCohereTarget.GetComponent<Kinematic>().linearVelocity = flockVelocity;
-
         steeringUpdate = new SteeringOutput();
         if (!avoidObstacles)
         {

@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Production.unity
     guid: 16c8613cfa27a8d40878e710f0364d32
+  - enabled: 1
+    path: Assets/Scenes/Flocking.unity
+    guid: fd077fe278d9ac24a83c171de3b9aff3
   m_configObjects: {}

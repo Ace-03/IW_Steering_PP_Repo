@@ -24,9 +24,6 @@ public class PrioritySteering
             }
         }
 
-        // if we get here, it means that no group had a large enough
-        // acceleration, so return the small acceleration from the
-        // final group
         return steering;
     }
 }
