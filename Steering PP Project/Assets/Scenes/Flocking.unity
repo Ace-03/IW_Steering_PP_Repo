@@ -184,7 +184,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0eb1cba34e126624983827630680f052, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -277,7 +277,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0eb1cba34e126624983827630680f052, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -370,7 +370,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0eb1cba34e126624983827630680f052, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -399,6 +399,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716846676}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1180194907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1180194909}
+  - component: {fileID: 1180194908}
+  m_Layer: 0
+  m_Name: Center
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1180194908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180194907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b46eb2ed669854e83b081d3d8ec9c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linearVelocity: {x: 0, y: 0, z: 0}
+  angularVelocity: 0
+  maxSpeed: 10
+  maxAngularVelocity: 45
+  myTarget: {fileID: 1913575436}
+--- !u!4 &1180194909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180194907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.179877, y: 0.86668587, z: 12.09076}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1314142828
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +511,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0eb1cba34e126624983827630680f052, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -507,7 +555,7 @@ GameObject:
   - component: {fileID: 1472517684}
   m_Layer: 0
   m_Name: Borb (2)
-  m_TagString: Untagged
+  m_TagString: bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -529,8 +577,8 @@ MonoBehaviour:
   maxSpeed: 10
   maxAngularVelocity: 45
   myTarget: {fileID: 1913575436}
-  avoidObstacles: 1
-  myCohereTarget: {fileID: 1729363049}
+  avoidObstacles: 0
+  myCohereTarget: {fileID: 1180194907}
 --- !u!135 &1472517685
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -561,7 +609,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1cb7d5e862140ca4cba9831bd8292499, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -619,7 +667,7 @@ GameObject:
   - component: {fileID: 1712754163}
   m_Layer: 0
   m_Name: Borb (1)
-  m_TagString: Untagged
+  m_TagString: bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -641,8 +689,8 @@ MonoBehaviour:
   maxSpeed: 10
   maxAngularVelocity: 45
   myTarget: {fileID: 1913575436}
-  avoidObstacles: 1
-  myCohereTarget: {fileID: 1729363049}
+  avoidObstacles: 0
+  myCohereTarget: {fileID: 1180194907}
 --- !u!135 &1712754164
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -673,7 +721,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1cb7d5e862140ca4cba9831bd8292499, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -731,7 +779,7 @@ GameObject:
   - component: {fileID: 1729363054}
   m_Layer: 0
   m_Name: Borb
-  m_TagString: Untagged
+  m_TagString: bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -766,7 +814,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1cb7d5e862140ca4cba9831bd8292499, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -827,7 +875,7 @@ MonoBehaviour:
   maxAngularVelocity: 45
   myTarget: {fileID: 1913575436}
   avoidObstacles: 0
-  myCohereTarget: {fileID: 1712754162}
+  myCohereTarget: {fileID: 1180194907}
 --- !u!1 &1907511711
 GameObject:
   m_ObjectHideFlags: 0
