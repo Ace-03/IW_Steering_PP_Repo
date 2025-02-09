@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// based on Millington pp. 62-63
 public class Arrive : SteeringBehavior
 {
     public Kinematic character;

@@ -40,11 +40,8 @@ public class Seek : SteeringBehavior
         // give full acceleration along this direction
         result.linear.Normalize();
         result.linear *= maxAcceleration;
-        //result.linear.y = 0;
 
-        result.angular = 10;
+        result.angular = 0;
         return result;
     }
-
-  
 }

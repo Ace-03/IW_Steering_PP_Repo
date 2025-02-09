@@ -16,9 +16,9 @@ public class Flocker : Kinematic
         Separation separate = new Separation();
         separate.character = this;
         GameObject[] goBirds = GameObject.FindGameObjectsWithTag("bird");
-        kBirds = new Kinematic[goBirds.Length - 1];
+        kBirds = new Kinematic[goBirds.Length-1];
         int j = 0;
-        for (int i = 0; i < goBirds.Length - 1; i++)
+        for (int i=0; i<goBirds.Length-1; i++)
         {
             if (goBirds[i] == this)
             {
@@ -71,6 +71,19 @@ public class Flocker : Kinematic
     // Update is called once per frame
     protected override void Update()
     {
+        // calculate our cohere target?
+        //Vector3 centerOfMass = Vector3.zero;
+        //Vector3 flockVelocity = Vector3.zero;
+        //foreach (Kinematic bird in kBirds)
+        //{
+        //    centerOfMass += bird.transform.position;
+        //    flockVelocity += bird.linearVelocity;
+        //}
+        //centerOfMass /= kBirds.Length;
+        //flockVelocity /= kBirds.Length;
+        //myCohereTarget.transform.position = centerOfMass;
+        //myCohereTarget.GetComponent<Kinematic>().linearVelocity = flockVelocity;
+
         steeringUpdate = new SteeringOutput();
         if (!avoidObstacles)
         {

@@ -1,4 +1,8 @@
-﻿public class Avoider : Kinematic
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Avoider : Kinematic
 {
     CollisionAvoidance myMoveType;
 

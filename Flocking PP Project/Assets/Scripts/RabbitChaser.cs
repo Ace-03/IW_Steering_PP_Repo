@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pursuer : Kinematic
+public class RabbitChaser : Kinematic
 {
-    Pursue myMoveType;
+    FollowPath myMoveType;
     LookWhereGoing myRotateType;
+
+    public GameObject[] myPath = new GameObject[4];
 
     // Start is called before the first frame update
     void Start()
@@ -14,9 +16,10 @@ public class Pursuer : Kinematic
         myRotateType.character = this;
         myRotateType.target = myTarget;
 
-        myMoveType = new Pursue();
+        myMoveType = new FollowPath();
         myMoveType.character = this;
-        myMoveType.target = myTarget;
+        //myMoveType.target = myTarget;
+        myMoveType.path = myPath;
     }
 
     // Update is called once per frame
