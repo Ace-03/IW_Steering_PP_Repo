@@ -569,7 +569,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1472517683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5fa7c8538083ee4dbb25e58cd894146, type: 3}
+  m_Script: {fileID: 11500000, guid: fe1ee7c03efdeb54cb53d9d2355e6494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   linearVelocity: {x: 0, y: 0, z: 0}
@@ -577,7 +577,7 @@ MonoBehaviour:
   maxSpeed: 10
   maxAngularVelocity: 45
   myTarget: {fileID: 0}
-  avoidObstacles: 1
+  avoidObstacles: 0
   myCohereTarget: {fileID: 1913575436}
 --- !u!135 &1472517685
 SphereCollider:
@@ -681,7 +681,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1712754162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5fa7c8538083ee4dbb25e58cd894146, type: 3}
+  m_Script: {fileID: 11500000, guid: fe1ee7c03efdeb54cb53d9d2355e6494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   linearVelocity: {x: 0, y: 0, z: 0}
@@ -689,7 +689,7 @@ MonoBehaviour:
   maxSpeed: 10
   maxAngularVelocity: 45
   myTarget: {fileID: 0}
-  avoidObstacles: 1
+  avoidObstacles: 0
   myCohereTarget: {fileID: 1913575436}
 --- !u!135 &1712754164
 SphereCollider:
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1729363049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5fa7c8538083ee4dbb25e58cd894146, type: 3}
+  m_Script: {fileID: 11500000, guid: fe1ee7c03efdeb54cb53d9d2355e6494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   linearVelocity: {x: 0, y: 0, z: 0}
@@ -874,7 +874,7 @@ MonoBehaviour:
   maxSpeed: 10
   maxAngularVelocity: 45
   myTarget: {fileID: 0}
-  avoidObstacles: 1
+  avoidObstacles: 0
   myCohereTarget: {fileID: 1913575436}
 --- !u!1 &1738732849
 GameObject:
@@ -888,6 +888,7 @@ GameObject:
   - component: {fileID: 1738732852}
   - component: {fileID: 1738732851}
   - component: {fileID: 1738732850}
+  - component: {fileID: 1738732854}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -968,6 +969,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738732854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738732849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e2fba4c0aaab4408378ff701e5306c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linearVelocity: {x: 0, y: 0, z: 0}
+  angularVelocity: 0
+  maxSpeed: 10
+  maxAngularVelocity: 45
+  myTarget: {fileID: 0}
 --- !u!1 &1907511711
 GameObject:
   m_ObjectHideFlags: 0
